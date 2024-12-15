@@ -1,0 +1,85 @@
+body, html{
+    overscroll-behavior: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.main{
+    width: 300px;
+    height: 495px;
+    margin: 100px auto 0;
+    font-family: Helvetica;
+}
+.main > h1{
+    font-size: 1em;
+}
+.Table table{
+    width: 100%;
+    cursor: pointer;
+    
+    overflow: hidden;
+    border-collapse: collapse;
+}
+.Table table thead{
+    background-color: rgb(4, 80, 147);
+    color: white;
+}
+.Table table thead th{
+    padding: 5px 30px;
+}
+
+.Table table tbody td{
+    border: 1px solid rgb(4, 80, 147);
+    padding: 10px 0 10px 8px;
+}
+.Table table tbody td:nth-last-child{
+    border-bottom-left-radius: 20px;
+}
+
+.User{
+    margin: 30px 0 50px;
+}
+.User form > h3{
+    color: rgb(4, 80, 147);
+    margin: 0 0 10px;
+}
+.User form > input{
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    outline: none;
+    width: 185px;
+    margin-right: 5px;
+    text-align: center;
+}
+.User form > button{
+    padding: 7px 20px;
+    background-color: rgb(4, 80, 147);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.User form > button:active{
+    background-color: rgb(0, 37, 69);
+}
+
+.Results {
+    display: flex;
+    justify-content: center;
+}
+.Results p{
+    text-align: center;
+    font-size: 1.6em;
+    margin: 0 10px 0;
+}
+.Results p.error{
+    color: rgb(255, 0, 0);
+}
+.Results span{
+    display: block;
+    text-align: center;
+    font-size: 1.6em;
+    color: rgb(1, 183, 10);
+}

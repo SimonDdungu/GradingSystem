@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="author" content="Quantum Developers => Selina, Simon, Artisan, Brian">
+    <meta name="description" content="A Grading App System developed by a group known as the Quantum Developers">
+    <meta name="keywords" content="Grading App, Grading System, Quantum Developers">
+
+
+    <!--FAV ICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Grading System</title>
+
+</head>
+
+
+<body>
+    <div class="main">
+        <h1>QUANTUM DEVELOPERS GRADING SYSTEM</h1>
+        <div class="Table">
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>90-100</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>80-89</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>70-79</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>60-69</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td>Below 60</td>
+                        <td>F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="User">
+            <form action="">
+                <h3>Enter your Marks:</h3>
+                <input type="text" inputmode="numeric" class="Marks" maxlength="3" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+                <button class="Submit">Submit</button>
+            </form>
+        </div>
+
+
+        <div class="Results">
+            <p class="Feedback" style="display: none;"></p><span class="Grade"></span>
+        </div>
+    </div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
