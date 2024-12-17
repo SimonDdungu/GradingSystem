@@ -3,6 +3,8 @@ const Feedback = document.querySelector(".Feedback");
 const Grade = document.querySelector(".Grade");
 const Submit = document.querySelector(".Submit");
 
+const Form = document.querySelector("form");
+
 function getGrades(Marks){
 
     Feedback.textContent = "You got a ";
@@ -50,6 +52,7 @@ Submit.addEventListener("click", (e)=> {
     }else{
         Feedback.classList.remove("error");
         getGrades(Marks);
+        Form.reset();
         console.log(Marks);
     }
 });
