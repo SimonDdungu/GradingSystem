@@ -70,8 +70,8 @@ body, html{
 }
 .Results p{
     text-align: center;
-    font-size: 1.6em;
-    margin: 0 10px 0;
+    font-size: 1.4em;
+    margin: 0 10px 0 0;
 }
 .Results p.error{
     color: rgb(255, 0, 0);
@@ -79,6 +79,6 @@ body, html{
 .Results span{
     display: block;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.4em;
     color: rgb(1, 183, 10);
 }

@@ -7,7 +7,7 @@ const Form = document.querySelector("form");
 
 function getGrades(Marks){
 
-    Feedback.textContent = "You got a ";
+    Feedback.textContent = `You scored ${Marks}% which is a `;
 
     switch(Marks){
         case (Marks>=90 && Marks <=100) && Marks:{
